@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner s= new Scanner(System.in);
+		int a = s.nextInt();
+		if(a<=10){
+		    System.out.println(a+" is a single digit number");
+		}
+		else if(a>99 && a<100){
+		    System.out.println(a+" is a double digit number");
+		}
+		else{
+		    System.out.println(a+" is a three digit number");
+		}
+	}
+}
