@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int pin= s.nextInt();
+		int atmpin= s.nextInt();
+		if(atmpin==pin){
+		    System.out.println("You can withdraw amount");
+		}
+		else 
+		{
+		    System.out.println("Sorry, wrong pin used you cant withdraw amount");
+		}
+	}
+}
