@@ -10,8 +10,10 @@ public class Main
 		else if(a>99 && a<100){
 		    System.out.println(a+" is a double digit number");
 		}
-		else{
+		else if(a>99 && a<1000){
 		    System.out.println(a+" is a three digit number");
 		}
+else{
+System.out.println("invalid input");
 	}
 }
