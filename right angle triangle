@@ -1,19 +1,19 @@
 import java.util.Scanner;
-public class Main
-{
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		int a = s.nextInt();
-		int b=s.nextInt();
-		int c=s.nextInt();
-		int d=a*a;
-		int e=b*b;
-		int f =c*c;
-		if(d+e==f||d+f==e||f+e==d){
-		    System.out.println("right angle triangle");
-		}
-		else{
-		    System.out.println("wrong triangle");
-		}
-	}
+public class RightAngledTriangleByAngles {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        int b = s.nextInt();
+        int c = s.nextInt();
+        if ((a+ b + c) == 180 && angle1 > 0 && angle2 > 0 && angle3 > 0) {
+            if (a==90||b ==90||c==90) {
+                System.out.println("The triangle is a right-angled triangle.");
+            } else {
+                System.out.println("The triangle is a valid triangle but not right-angled.");
+            }
+        } else {
+            System.out.println("The given angles do not form a valid triangle.");
+        }
+    }
 }
+
