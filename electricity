@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int a= s.nextInt();
+        double bill=0;
+        if (a>=0&&a<=100) {
+        System.out.println("free");
+    }
+    else if (a>100&&a<301) {
+         bill = (a-100)*5;
+        System.out.println("charge:"+bill);
+    }
+    else if (a>300&&a<501) {
+        bill = ((a-100)*5)+((a-300)*10);
+        System.out.println("charge:"+bill);
+    }
+    else  {
+        bill = ((a-100)*5)+((a-300)*10)*0.1;
+        System.out.println("charge:"+bill);
+    }
+    }
+}
