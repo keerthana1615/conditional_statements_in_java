@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double b = sc.nextDouble();
+		if(b>=100){
+		    System.out.println("vehicle exceeds the speed of 100km/h");
+		}
+		else{
+		    System.out.println("vehicle does not exceeds the speed of 100km/h");
+		}
+	}
+}
