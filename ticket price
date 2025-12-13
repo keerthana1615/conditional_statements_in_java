@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int b = sc.nextInt();
+		double c = 5.00;
+		double a = 15.00;
+		double s = 10.00;
+		if(b<=11){
+		    System.out.println("for Child:"+c);
+		}
+		else if(b>=12 && b<=58){
+		    System.out.println("for adult:"+a);
+		}
+		else{
+		    System.out.println("for Senior:"+s);
+		}
+	}
+}
