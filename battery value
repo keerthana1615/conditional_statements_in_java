@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int b = sc.nextInt();
+		if(b==100){
+		    System.out.println("full");
+		}
+		else if(b>=35 && b<=99){
+		    System.out.println("moderate");
+		}
+		else{
+		    System.out.println("low battery!!");
+		}
+	}
+}
